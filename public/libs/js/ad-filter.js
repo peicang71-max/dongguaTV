@@ -22,6 +22,13 @@
 (function () {
     'use strict';
 
+    // 调试：通过 URL 参数 ?no-adfilter 完全禁用广告过滤（包括 HLS loader）
+    // 用于测试投屏等功能是否受 ad-filter 影响
+    if (window.location.search.includes('no-adfilter')) {
+        console.log('[广告过滤] ⚠️ 检测到 ?no-adfilter 参数，广告过滤模块已完全禁用');
+        return;
+    }
+
     // 配置
     const AD_FILTER_CONFIG = {
         enabled: true,                    // 总开关
