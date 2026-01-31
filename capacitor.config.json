@@ -1,9 +1,9 @@
 ﻿{
-    "appId": "com.ednovas.donguatv",
-    "appName": "E视界",
+    "appId": "com.ednovas.sirentv",
+    "appName": "私人影院",
     "webDir": "public",
     "server": {
-        "url": "https://ednovas.video",
+        "url": "http://nas.jqcykj.com:3000",
         "cleartext": true
     },
     "plugins": {
@@ -14,4 +14,5 @@
         },
         "ScreenOrientation": {}
     }
+
 }
